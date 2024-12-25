@@ -2,10 +2,12 @@ package com.javaacademy.school.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Schema(description = "Учитель")
+@Builder
 public class TeacherDto {
     private Integer id;
 
